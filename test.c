@@ -5,9 +5,10 @@ int add(int a, int b){
     return a + b;
 }
 
-int main(void){
+//--------------------------------------------------------------
+int main(){
     
-/*
+
     int x = 4;
     int *pX = &x;
     *pX = 9;
@@ -19,7 +20,7 @@ int main(void){
     
     printf("y: %d\n",y);
     printf("pX2: %d\n",*pX);
-*/
+//-----------------------------------------------------------------
     int size;
     printf("Enter the size of the array: ");
     scanf("%d",&size);
@@ -41,6 +42,8 @@ int main(void){
     }
     printf("\n");
     free(a);
+//-----------------------------------------------------------------------
+   
     return 0;
 
 }
