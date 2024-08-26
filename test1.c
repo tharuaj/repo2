@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define formel(x) x*x +1
 #define add(num1,num2) num1 + num2 
 // macros are replaced during preprocessor in the code before compilation
 
@@ -11,23 +12,19 @@ typedef struct
     /* data */
 } Student;
 
-typedef struct{
-    char name[10];
-    int count;
-} Group;
-
 
 int main()
 {
-    int a, b, c;
-    a = b = c = 0;
+    
+    int x, b, c;
+    x = b = c = 0;
     printf("Enter the first number : ");
-    scanf("%d", &a);
+    scanf("%d", &x);
     printf("Enter the second number: ");
     scanf("%d", &b);
     printf("Enter the third number: ");
     scanf("%d", &c);
-    printf("result: %d\n", a+b+c);
+    printf("result: %d\n", x+b+c);
 
     int sum = add(6,7);
     printf("sum: %d\n", sum);
@@ -42,6 +39,11 @@ int main()
     printf("Student 2\n ");
     printf("Name: %s, Age: %d, RollNo.: %d, Class: %d\n", studs[1].name, studs[1].age, studs[1].roll_No, studs[1].class);
     
+   int a = 2; 
+   int z = formel(a+1);
+   printf("result z: %d\n", z);
+
+
 
     return 0;
 }
